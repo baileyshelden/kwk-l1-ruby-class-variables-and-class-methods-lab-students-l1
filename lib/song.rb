@@ -2,7 +2,7 @@ Class songs
 
  def initialize(name, artist, genre)
   @name = name
-  @artist = artist 
+  @@artist = artist 
   @genre = genre 
  end 
 
@@ -14,8 +14,10 @@ Class songs
   @artist 
  end 
 
-def genre 
+ def genre 
   @genre
-end 
+ end 
 
 end 
+
+song.new("Lucifer", "Jay-Z", "Rap")
